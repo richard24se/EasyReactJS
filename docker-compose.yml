@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  react:
+    container_name: react_dev
+    build: 
+      context: .
+      dockerfile: ./docker/react.Dockerfile
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    command: >    
+      sh -c "ls -ls && yarn start" 
+    volumes:
+      - ./react/public:/react/public
+      - ./react/src:/react/src
+    ports:
+      - "3000:3000"
