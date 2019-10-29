@@ -5,7 +5,9 @@ import * as serviceWorker from "./serviceWorker";
 
 
 ReactDOM.render(
-  <div>Hello World</div>,
+  <div>Hello World 
+    <span style={{color: 'blue'}}> REACT!</span>
+  </div>,
   document.getElementById("root"),
 );
 
