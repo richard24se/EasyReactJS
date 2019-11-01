@@ -3,11 +3,15 @@ import ReactDOM from "react-dom";
 
 import * as serviceWorker from "./serviceWorker";
 
+import App from "./components/App"
+
+
+/*<div>Hello World 
+    <span style={{color: 'blue'}}> REACT!</span>
+  </div>*/
 
 ReactDOM.render(
-  <div>Hello World 
-    <span style={{color: 'blue'}}> REACT!</span>
-  </div>,
+  <App/>,
   document.getElementById("root"),
 );
 
